@@ -1,7 +1,8 @@
 <template>
   <div class="home">
+    <NavbarFilter @filterDurum="aktifSekme=$event" :aktifSekme="aktifSekme" />
     <div v-if="yapilacaklar.length">
-      <div v-for="yap in yapilacaklar" :key="yap.id">
+      <div v-for="yap in filtrelenmisYapilacaklar" :key="yap.id">
         <Yapilacak :yapilacak="yap" @sil="silHandle" @yapildi="yapildiHandle" />
       </div>
     </div>
@@ -14,15 +15,18 @@
 <script>
 
 import Yapilacak from '../components/Yapilacak.vue'
+import NavbarFilter from '../components/NavbarFilter.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Yapilacak
+    Yapilacak,
+    NavbarFilter
   },
   data() {
     return {
       yapilacaklar: [],
+      aktifSekme: 'hepsi'
     }
   },
   mounted() {
@@ -42,6 +46,17 @@ export default {
         return yap.id === id
       });
       yap.yapildi = !yap.yapildi
+    }
+  },
+  computed:{
+    filtrelenmisYapilacaklar(){
+      if(this.aktifSekme=== 'tamamlandi'){
+        return this.yapilacaklar.filter(yapilacak=>yapilacak.yapildi)
+      }
+      if(this.aktifSekme=== 'yapiliyor'){
+        return this.yapilacaklar.filter(yapilacak=>!yapilacak.yapildi)
+      }
+      return this.yapilacaklar
     }
   }
 
