@@ -8,7 +8,7 @@
 <style>
 
 body{
-  background-color: #2f3542; 
+  background-color: #b1a8a5; 
 }
 
 #app {
