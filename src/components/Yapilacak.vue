@@ -3,7 +3,9 @@
         <div class="baslik">
             <h3 @click="detayGoster= !detayGoster">{{ yapilacak.baslik }}</h3>
             <div class="icon">
-                <span class="material-icons">edit</span>
+                <router-link :to="{name:'YapilacakGuncelle', params:{id:yapilacak.id}}">
+                    <span class="material-icons">edit</span>
+                </router-link>
                 <span class="material-icons" @click="yapilacakSil">delete</span>
                 <span class="material-icons" @click="toggle" tick>done</span>
             </div>
