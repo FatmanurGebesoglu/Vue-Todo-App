@@ -29,14 +29,14 @@
 <style>
     .yapilacak{
         margin: 20px auto;
-        background-color: #696a6d;
+        background-color: #F7EDDB;
         padding: 10px 20px;
         border-radius: 15px;
-        border: 3px solid #e9ace1;
-        color: #f7f1e3;
+        border: 3px solid #967E76;
+        color: #1c1c1b;
     }
     .yapilacak:hover{
-        box-shadow: 8px 10px 10px rgba(2,2,2,0.3);
+        box-shadow: 8px 10px 10px #967E76;
     }
     h3{
         cursor: pointer;
@@ -49,11 +49,11 @@
     .material-icons{
         font-size: 25px;
         margin-left: 10px;
-        color: #bfc6d3;
+        color: #83764F;
         cursor: pointer;
     }
     .material-icons:hover{
-        color: #ea2577;
+        color: #F97B22;
         font-size: 30px;
     }
 </style>
