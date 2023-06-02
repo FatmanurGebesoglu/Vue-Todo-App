@@ -1,8 +1,22 @@
 {
-    "yapilacaklar":[
-        {"id":1, "baslik":"Kitap oku", "icerik":"Harry potter kitabından 30 sayfa oku", "yapildi":true},
-        {"id":2, "baslik":"Dizi izle", "icerik":"Last of us dizisinden 2 bölüm izle", "yapildi":false},
-        {"id":3, "baslik":"Alışveriş yap", "icerik":"Sebze ve meyve al", "yapildi":false}
-
-    ]
+  "yapilacaklar": [
+    {
+      "id": 1,
+      "baslik": "Kitap oku",
+      "icerik": "Harry potter kitabından 30 sayfa oku",
+      "yapildi": false
+    },
+    {
+      "id": 2,
+      "baslik": "Dizi izle",
+      "icerik": "Last of us dizisinden 2 bölüm izle",
+      "yapildi": false
+    },
+    {
+      "id": 3,
+      "baslik": "Alışveriş yap",
+      "icerik": "Sebze ve meyve al",
+      "yapildi": false
+    }
+  ]
 }
