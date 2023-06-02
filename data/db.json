@@ -17,6 +17,12 @@
       "baslik": "Alışveriş yap",
       "icerik": "Sebze ve meyve al",
       "yapildi": true
+    },
+    {
+      "id": 131898541,
+      "baslik": "deneme",
+      "icerik": "deneme",
+      "tamamlandi": false
     }
   ]
 }

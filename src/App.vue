@@ -1,14 +1,21 @@
 <template>
-  <nav>
-   
-  </nav>
-  <router-view/>
+  <Navbar />
+  <router-view />
 </template>
 
-<style>
+<script>
+import Navbar from './components/Navbar.vue'
+export default {
+ 
+  components: {
+    Navbar
+  }
+}
+</script>
 
-body{
-  background-color: #CCD6A6; 
+<style>
+body {
+  background-color: #CCD6A6;
 }
 
 #app {
@@ -20,7 +27,4 @@ body{
   max-width: 800px;
   margin: 0 auto;
 }
-
-
-
 </style>
