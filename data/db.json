@@ -4,7 +4,7 @@
       "id": 1,
       "baslik": "Kitap oku",
       "icerik": "Harry potter kitabından 30 sayfa oku",
-      "yapildi": false
+      "yapildi": true
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "id": 3,
       "baslik": "Alışveriş yap",
       "icerik": "Sebze ve meyve al",
-      "yapildi": false
+      "yapildi": true
     }
   ]
 }
